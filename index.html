@@ -2,96 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portafolio - [Tu Nombre]</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #f2f2f2;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - [Tu Nombre]</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Encabezado y navegación -->
-  <header>
-    <h1>[Tu Nombre]</h1>
-    <p>Desarrollador de software | Full Stack | Estudiante de informática</p>
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Basthian Flores</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Hola, soy Basthian Flores</h1>
+      <p class="lead">Desarrollador de Software | Estudiante de Informática</p>
+    </div>
   </header>
 
-  <!-- Sección: Sobre mí -->
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Hola, soy [Tu Nombre], estudiante/desarrollador con interés en crear soluciones digitales. Me gusta trabajar con tecnologías como [HTML, CSS, JavaScript, Python, etc.].</p>
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Sobre mí</h2>
+      <p>
+        Me gusta mucho el mundo del desarrollo y actualmente soy un estudiante que cursa la carrera de ingenieria en informatica.
+        
+        Actualmente me dedico a aprender y desarrollar proyectos utilizando diversos lenguajes de progrmación, herramientas, entre otros, para asegurar que cada producto Desarrollado
+        sea llamativo y cumpla con los estandares que el mundo proyecta actualmente
+      </p>
+    </div>
   </section>
 
-  <!-- Sección: Proyectos -->
-  <section id="proyectos">
-    <h2>Proyectos destacados</h2>
-    <ul>
-      <li>
-        <strong>Nombre del Proyecto 1</strong><br/>
-        <p>Descripción breve del proyecto.</p>
-        <a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver en GitHub</a>
-      </li>
-      <li>
-        <strong>Nombre del Proyecto 2</strong><br/>
-        <p>Descripción breve del proyecto.</p>
-        <a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver en GitHub</a>
-      </li>
-    </ul>
+  <!-- Proyectos -->
+  <section id="proyectos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Proyectos</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Aplicación web para tareas con HTML, CSS y JS.</p>
+              <a href="https://github.com/tuusuario/proyecto1" class="btn btn-primary" target="_blank">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Juego 2D desarrollado en JavaScript puro.</p>
+              <a href="https://github.com/tuusuario/proyecto2" class="btn btn-primary" target="_blank">Ver en GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Sección: Habilidades -->
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python, Java</li>
-      <li>React, Node.js (si aplica)</li>
-      <li>Git, GitHub</li>
-    </ul>
+  <!-- Habilidades -->
+  <section id="habilidades" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Habilidades</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">HTML, CSS, JavaScript</li>
+        <li class="list-group-item">Python, Java</li>
+        <li class="list-group-item">React, Node.js</li>
+        <li class="list-group-item">Git, GitHub</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Sección: Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 Email: tuemail@ejemplo.com</p>
-    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank">/tuusuario</a></p>
-    <p>📍 Ciudad, País</p>
+  <!-- Contacto -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Contacto</h2>
+      <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+      <p>Ubicación: Ciudad, País</p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 [Tu Nombre] - Portafolio Personal</p>
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 [Tu Nombre] - Portafolio Personal</small>
+    </div>
   </footer>
 
-</body>
-</html>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
