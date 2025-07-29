@@ -1,137 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio - Basthian Flores</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Portafolio-Basthian</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
 </head>
+
 <body>
-
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Basthian Flores</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Encabezado -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Hola, soy Basthian Flores</h1>
-      <p class="lead">Desarrollador de Software | Estudiante de Informática</p>
-    </div>
-  </header>
-
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Sobre mí</h2>
-      <p>
-        Me gusta mucho el mundo del desarrollo y actualmente soy un estudiante que cursa la carrera de ingenieria en informatica.
-        Actualmente me dedico a aprender y desarrollar proyectos utilizando diversos lenguajes de progrmación, herramientas, entre otros, para asegurar que cada producto Desarrollado
-        sea llamativo y cumpla con los estandares que el mundo proyecta actualmente
-      </p>
-    </div>
-  </section>
-
-  <!-- Proyectos -->
-  <section id="proyectos" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Proyectos</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 1</h5>
-              <p class="card-text">Proyecto no definido.</p>
-              <a href="#" class="btn btn-primary" target="_blank">No disponible</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 2</h5>
-              <p class="card-text">Proyecto no definido.</p>
-              <a href="#" class="btn btn-primary" target="_blank">No disponible</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Habilidades -->
-  <section id="habilidades" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Habilidades</h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <h5>Lenguajes de programación usados</h5>
-          <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C#</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-          </ul>
+  <div class="d-flex flex-column w-100 h-100 p-3">
+    <div class="d-flex flex-row">
+      <a class="navbar-brand col-md-5" href="#">Portafolio</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-md-7 flex-row">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Inicio</a>
         </li>
-        <li class="list-group-item">
-          <h5>Desarrollo Frontend</h5>
-          <ul>
-            <li>React</li>
-            <li>Bootstrap 5</li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Información</a>
         </li>
-        <li class="list-group-item">
-          <h5>Desarrollo Backend</h5>
-          <ul>
-            <li>Java Spring Boot</li>
-            <li>Node.js</li>
-            <li>PHP basico</li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <h5>Bases de datos</h5>
-          <ul>
-            <li>MySql</li>
-            <li>Sql Server</li>
-            <li>PostgresSQL</li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proyectos</a>
         </li>
       </ul>
     </div>
-  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+</body>
 
-  <!-- Contacto -->
-  <section id="contacto" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Contacto</h2>
-      <p>Email: <a href="mailto:basthianfmillan@gmail.com">basthianfmillan@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
-      <p>Ubicación: Penco, Chile</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <small>&copy; 2025 Basthian - Portafolio Personal</small>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
+</html>
