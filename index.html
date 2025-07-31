@@ -11,7 +11,7 @@
   <style>
     html,
     body {
-      background: linear-gradient(145deg, #000000, #272727);
+      background: linear-gradient(145deg, #050046, #32348b);
       font-family: 'Roboto', sans-serif;
       justify-content: center;
     }
@@ -30,6 +30,12 @@
 
     a.nav-link {
       color: #CCCCCC !important;
+    }
+
+    .hr {
+      border: 2px solid white;
+      width: 500px;
+      border-radius: 2px;
     }
 
     @media (min-width: 768px) {
@@ -97,7 +103,7 @@
       <section class="col-md-7 tab-content">
         <div class="tab-pane fade show active p-4" id="sobremi" role="tabpanel">
           <div class="d-flex flex-column w-100" style="max-width: 683px;">
-            <h4 class="text-center">Sobre mi</h4>
+            <h4 class="text-center fw-bold">Sobre mi</h4>
             <div>
               <h5 class="fw-bold">¿Quien soy?</h5>
               <p style="text-align: justify;">
@@ -146,16 +152,18 @@
           </div>
         </div>
         <div class="tab-pane fade p-4" id="proyectos" role="tabpanel">
-          <div style="max-width: 683px;">
+          <div class="d-flex flex-column align-items-center" style="max-width: 683px;">
             <h4 class="text-center">Proyectos</h4>
-            <p style="text-align: justify;">
-              A lo largo de mis estudios he desarrollado diversos proyectos, tanto individuales como en equipo, usando
-              tecnologías modernas del ecosistema web y de software en general. Mis proyectos destacan por su enfoque en
-              la lógica, la estructura clara del código y la búsqueda de una buena experiencia de usuario. Algunos de
-              estos incluyen desarrollo de sistemas web, APIs con autenticación, aplicaciones móviles básicas, y sitios
-              implementados desde cero con distintas arquitecturas. Me enfoco en la integración de tecnologías, la
-              resolución de problemas y la mejora continua.
-            </p>
+            <hr>
+            <div class="card" style="max-width: 500px;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Sistema de gestión de equipos e incidencias</h5>
+                <p class="card-text">Un sistema que permite el gestionar equipos empresariales y la mantención de los
+                  mismos</p>
+                <a href="https://github.com/Basthian-Developer/Sistema-gestion-equipos" class="btn btn-primary">Ir a
+                  ver</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade p-4" id="contacto" role="tabpanel">
